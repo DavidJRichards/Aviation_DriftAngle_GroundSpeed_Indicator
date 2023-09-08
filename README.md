@@ -44,6 +44,7 @@ Notes:
  * Signal input pins ?
 
 <br>
+
 ## Back panel
 
 |      |                      |                      |
@@ -69,6 +70,7 @@ Notes:
 | E1   |black-125,black-93    |chassis               |
 
 <br>
+
 ## No.1 PCB
 ![Board1](./images/Board1.jpg)
 
@@ -93,6 +95,7 @@ Notes:
 
 
 <br>
+
 ## No.2 PCB
 ![Board2](./images/Board2.jpg)
 
@@ -126,6 +129,7 @@ Notes:
 | 66  |black-94              |chassis               |
 
 <br>
+
 ## No.2 PCB
 
 |Term |Wires                 |                      |
@@ -158,6 +162,7 @@ Notes:
 | 66  |black-94              |chassis               |
 
 <br>
+
 ## RLA Relay
  ![Relay](./images/Relay.jpg) ![Relay](./images/RelayPins.jpg)
 
@@ -180,6 +185,7 @@ Notes:
 | 8 |pink-79  |NO-8           |
 
 <br>
+
 ## Misc Bindings
 
 | Terminal    | Wire                                   | Function           |
@@ -206,6 +212,7 @@ Notes:
 
 
 <br>
+
 ## Transformer
 
 |Pin#|Wire     |               |
@@ -223,6 +230,7 @@ Notes:
 
 
 <br>
+
 ## X4 Drift Resolver Compensating 
 
 |Name|Wire    |                      |
@@ -242,6 +250,7 @@ Notes:
 
 
 <br>
+
 ## X5 Speed Potentiometer
 
 2k ohms 5%
@@ -253,6 +262,7 @@ Notes:
 | 3 |black-33|75|
 
 <br>
+
 ## X1 Speed Servo Tachometer
 200:1 gearbox
 
@@ -270,6 +280,7 @@ Notes:
 |white    |        |
 
 <br>
+
 ## X2 Drift Servo Motor Tachogenerator (blue)
 
  * SM | Y-W 26V| R-R/BK 13V | G-BK 13V  
