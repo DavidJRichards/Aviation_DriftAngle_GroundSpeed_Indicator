@@ -22,8 +22,8 @@ Details as seen from rear when unit level, connector is skewed from standard.
 | E       | n/c     |           |          | Y        |pink-80 |S-red9     |
 | F       |pink-70  |32  unknown|          | Z        |red-90  |rly6:coil b|
 | G       |pink-63  |rly5:NC    |          | a        |pink-58 |41 unknown |
-| H       |pink-77  |rv1        |          | b        | n/c    |           |
-| J       |pink-75  |rv2, C2, C3|          | c        |pink-64 |17 unknown |
+| H       |pink-44  |rv1        |          | b        | n/c    |           |
+| J       |pink-45  |rv2, C2, C3|          | c        |pink-64 |17 unknown |
 | K       |pink-81  |14 unknown |          | d        | n/c    |           |
 | L       |pink-73  |32 unknown |          | e        | n/c    |           |
 | M       | n/c     |           |          |          |        |           |
@@ -47,6 +47,8 @@ Notes:
 
 ## Back panel
 
+![Back Panel](./images/BackPanel.jpg)
+
 |      |                      |                      |
 |------|----------------------|----------------------|
 | 3    |                      |                      |
@@ -55,19 +57,37 @@ Notes:
 | 6 & 7|black-52,C10-?,C11-?  |                      |
 | 8    |black-98,black-22,C8-?|                      |
 | 9    |pink-21,pink-43,C8    |                      |
-| 10   |pink-44,C10           |                      |
+| 10   |pink-44,pink-46,C10   |'H', RV1              |
 | 11   |pink-45,C11           |                      |
-| 12   |S-black7,pink-74      |                      |
+| 12   |X1-black7,pink-74     |                      |
 | 13   |S-red9,pink-80        |                      |
 | 14   |pink-91,pink-81       |'K'                   |
-| 15   |pink-77,pink-78,C2-?  |'H'                   |
-| 16   |pink-76,pink-77,C?    |C2 to 'pink-75, 'J'   |
+| 15   |pink-77,pink-78,C2-?  |to S-black17, S-red5  |
+| 16   |pink-76,pink-77,C?    |C2 to pink-75, 'J'    |
 | 17   |pink-65,pink-64       |'c'                   |
 | 18   |pink-97,pink-86       |Resolver-S7,Pot2-wiper|
 | ??   |pink-75,S-white3,C2-? |'J'                   |
 | 19   |pink-76,C3-?          |C3 to pink-75, 'J'    |
 | 20   |pink-75,yellow-7147,C3|'J' 50 ohms to chassis|
 | E1   |black-125,black-93    |chassis               |
+
+<br>
+
+## Transformer
+
+|Pin#|Wire     |               |
+|----|---------|---------------|
+|1   |n/c      |               |
+|2   |link to 8|               |
+|3   |n/c      |               |
+|4   |pink-40  |TR2-c          |
+|5   |n/c      |               |
+|6   |n/c      |               |
+|7   |pink-41  |TR3-c          |
+|8   |pink-39  |71,red (DC+ve) |
+|9   |black-42 |to resolver 26v|
+|10  |black-43 |to resolver 26v|
+
 
 <br>
 
@@ -105,8 +125,8 @@ Notes:
 |  32 |pink-72,pink-73       |                      |
 |  33 |S-green8,S-red/black9 |                      |
 |  34 |S-lime18,S-red/black19|                      |
-|  35 |S-blue767,pink-83     |                      |
-|  36 |S-brown1,pink-82      |                      |
+|  35 |X1-blue767,pink-83    |                      |
+|  36 |X1-brown1,pink-82     |                      |
 |  37 |pink-117,pink-121     |                      |
 |  38 |pink-118,pink-123     |                      |
 |  39 |pink-115,pink-119     |                      |
@@ -123,42 +143,9 @@ Notes:
 | 60  |pink-25,R21           |                      |
 | 61  |pink-29,R12-2k2       |                      |
 | 62  |pink-50,R12           |                      |
-| 63  |pink-24,pink-97       |Resolver-S7,pot2-wiper|
-| 64 -|pink-78,pink-79       |link                  |
-| 65 -|S-black17,S-red5      |link                  |
-| 66  |black-94              |chassis               |
-
-<br>
-
-## No.2 PCB
-
-|Term |Wires                 |                      |
-|-----|----------------------|----------------------|
-|  31 |pink-69,pink-70       |                      |
-|  32 |pink-72,pink-73       |                      |
-|  33 |S-green8,S-red/black9 |                      |
-|  34 |S-lime18,S-red/black19|                      |
-|  35 |S-blue767,pink-83     |                      |
-|  36 |S-brown1,pink-82      |                      |
-|  37 |pink-117,pink-121     |                      |
-|  38 |pink-118,pink-123     |                      |
-|  39 |pink-115,pink-119     |                      |
-|  40 |pink-116,pink-120     |                      |
-|  41 |pink-58,pink-124      |                      |
-|     |                      |                      |
-| 53  |pink-53, R5-1k8       |                      |
-| 54  |pink-54, R7-1k8       |                      |
-| 55 -|pink-39,pink-123      |link                  |
-| 56 -|red-59,red-60         |A link                |
-| 57 -|red-89,red-55         |link                  |
-| 58  |pink-56,R10-10k       |                      |
-| 59  |pink-57,R21-1K        |                      |
-| 60  |pink-25,R21           |                      |
-| 61  |pink-29,R12-2k2       |                      |
-| 62  |pink-50,R12           |                      |
 | 63  |pink-24,pink-97       |Pot2-wiper,Resolver-S7|
-| 64 -|pink-78,pink-79       |link                  |
-| 65 -|S-black17,S-red5      |link                  |
+| 64 -|pink-78,pink-79       |link '?'              |
+| 65 -|S-black17,X1-red5     |link '?'              |
 | 66  |black-94              |chassis               |
 
 <br>
@@ -210,28 +197,11 @@ Notes:
 |MomSw2     |black-68                                |                    |
 |           |                                        |                    |
 
-
-<br>
-
-## Transformer
-
-|Pin#|Wire     |               |
-|----|---------|---------------|
-|1   |n/c      |               |
-|2   |link to 8|               |
-|3   |n/c      |               |
-|4   |pink-40  |TR2-c          |
-|5   |n/c      |               |
-|6   |n/c      |               |
-|7   |pink-41  |TR3-c          |
-|8   |pink-39  |71,red (DC+ve) |
-|9   |black-42 |to resolver 26v|
-|10  |black-43 |to resolver 26v|
-
-
 <br>
 
 ## X4 Drift Resolver Compensating 
+
+![Resolver X4](./images/Resolver-X4.jpg)
 
 |Name|Wire    |                      |
 |----|--------|----------------------|
@@ -249,7 +219,10 @@ Notes:
 |R4  |pink-30 |RV1-2                 |
 
 
+
 <br>
+
+![Motors & Potentiometer](./images/Motors.jpg)
 
 ## X5 Speed Potentiometer
 
@@ -261,6 +234,7 @@ Notes:
 | 2 |pink-31 |wiper 77|
 | 3 |black-33|75|
 
+
 <br>
 
 ## X1 Speed Servo Tachometer
@@ -268,14 +242,14 @@ Notes:
 
 |Colour   |Terminal|Wire|
 |---------|--------|----|
-|black    |        |
-|brown    |        |
-|red      |        |
+|black    | 12     |X1-black7
+|brown    | 36     |X1-brown1
+|red      | 65     |X1-red5
 |red/black|        |
 |yellow   |        |
 |orange   |        |
 |green    |        |
-|blue     |        |
+|blue     | 35     |X1-blue767
 |grey     |        |
 |white    |        |
 
