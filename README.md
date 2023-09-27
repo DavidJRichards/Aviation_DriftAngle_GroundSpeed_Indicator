@@ -6,32 +6,39 @@ Decca 5841-99-622-9212 Type 9308WN28WM
 
 Note: none of these details are verified correct, WIP
 
-## Connector
+## PLA Connector
 
 Details as seen from rear when unit level, connector is skewed from standard. 
 
 ![Connector-18-32](./images/Connector-18-32.png)
 
-|Outer row| Wire    | Term      |          |Middle row| Wire   | Term      |
-|---------|---------|-----------|--------- |----------|--------|-----------|
-|         |         |---------- |----------|          |        |           |
-| A       |red-59   |rly2:coil a|          | U        |pink-95 |Pot1       |
-| B       |pink-62  |rly7:Com   |          | V        |pink-89 |18 unknown |
-| C       |black-96 |tran9:     |          | W        |red-91  |rly6:coil b|
-| D       |pink-120 |40-fp112   |          | X        |pink-74 |S-black7   |
-| E       | n/c     |           |          | Y        |pink-80 |S-red9     |
-| F       |pink-70  |32  unknown|          | Z        |red-90  |rly6:coil b|
-| G       |pink-63  |rly5:NC    |          | a        |pink-58 |41 unknown |
-| H       |pink-44  |rv1        |          | b        | n/c    |           |
-| J       |pink-45  |rv2, C2, C3|          | c        |pink-64 |17 unknown |
-| K       |pink-81  |14 unknown |          | d        | n/c    |           |
-| L       |pink-73  |32 unknown |          | e        | n/c    |           |
-| M       | n/c     |           |          |          |        |           |
-| N       | n/c     |           |          |Inner row | Wire   | Term      |
-| P       | n/c     |           |          | f        |pink-119|39-fp111   |
-| R       | red-60  |DC in red  |          | g        |black-93|chassis    |
-| S       | pink-121|113-fp     |          | h        |black-87|78,79,black|
-| T       | pink-61 |rly7:Com   |          | j        |pink-122|38-fp114   |
+|Outer row| Wire    | Term       |          |Middle row| Wire   | Term      |
+|---------|---------|------------|--------- |----------|--------|-----------|
+|         |         |------------|----------|          |        |           |
+| A       |red-59   |rly2:coil a |          | U        |pink-95 |Pot1       |
+| B       |pink-62  |rly7:Com    |          | V        |pink-89 |18 unknown |
+| C       |black-96 |tran9:      |          | W        |red-91  |rly6:coil b|
+| D       |pink-120 |40-fp112    |          | X        |pink-74 |S-black7   |
+| E       | n/c     |            |          | Y        |pink-80 |S-red9     |
+| F       |pink-70  |31 Test sw1 |          | Z        |red-90  |rly6:coil b|
+| G       |pink-63  |rly5:NC     |          | a        |pink-58 |41 unknown |
+| H       |pink-44  |rv1         |          | b        | n/c    |           |
+| J       |pink-45  |rv2, C2, C3 |          | c        |pink-64 |17 Mem. sw |
+| K       |pink-81  |14 unknown  |          | d        | n/c    |           |
+| L       |pink-73  |32 Test sw2 |          | e        | n/c    |           |
+| M       | n/c     |            |          |          |        |           |
+| N       | n/c     |            |          |Inner row | Wire   | Term      |
+| P       | n/c     |            |          | f        |pink-119|39-fp111   |
+| R       | red-60  |DC in red   |          | g        |black-93|chassis    |
+| S       | pink-121|113-fp      |          | h        |black-84|78,79,black|
+| T       | pink-61 |rly7:Com    |          | j        |pink-122|38-fp114   |
+
+Unknown:
+
+where does 'K' t14 pink-9159  go to ?
+where does 'V'     pink-89  go to ?
+where does 'a' t41 pink-124 go to ?
+
 
 Notes:
 
@@ -49,25 +56,32 @@ Notes:
 
 ![Back Panel](./images/BackPanel.jpg)
 
+note:
+link 16 to 19 (pink-76) to 'PLA' c'
+link 6 to 7(bare wire)
+link 15 to 20(pink-75)
+
+
+
 |      |                      |                      |
 |------|----------------------|----------------------|
 | 3    |                      |                      |
 | 4    |                      |                      |
 |      |                      |                      |
-| 6 & 7|black-52,C10-?,C11-?  |                      |
+| 6 & 7|black-52,C10-?,C11-?  |'h'                      |
 | 8    |black-98,black-22,C8-?|                      |
 | 9    |pink-21,pink-43,C8    |                      |
 | 10   |pink-44,pink-46,C10   |'H', RV1              |
 | 11   |pink-45,C11           |                      |
 | 12   |X1-black7,pink-74     |                      |
-| 13   |S-red9,pink-80        |                      |
-| 14   |pink-91,pink-81       |'K'                   |
-| 15   |pink-77,pink-78,C2-?  |to S-black17, S-red5  |
+| 13   |S-red9209,pink-80     |                      |
+| 14   |pink-9159,pink-81     |'K'                   |
+| 15 ?  |pink-77,pink-78,C2-?  |to S-black17, S-red5  |
+| 15   |pink-75,S-white3,C2   |
 | 16   |pink-76,pink-77,C?    |C2 to pink-75, 'J'    |
-| 17   |pink-65,pink-64       |'c'                   |
+| 17   |pink-65,pink-64       |'c' mem switch to chassis|
 | 18   |pink-97,pink-86       |Resolver-S7,Pot2-wiper|
-| ??   |pink-75,S-white3,C2-? |'J'                   |
-| 19   |pink-76,C3-?          |C3 to pink-75, 'J'    |
+| 19   |pink-77,pink-76,C3-?  |via C3 to             |
 | 20   |pink-75,yellow-7147,C3|'J' 50 ohms to chassis|
 | E1   |black-125,black-93    |chassis               |
 
@@ -104,7 +118,7 @@ Notes:
 | 76 |pink-54            |R7,C to SL201-2       |
 | 77 |pink-31,pink-97    |Resolver-S7,Pot2-wiper|
 | 78 |S-blue7167,black-85|?                     |
-| 79 |black-52,black-84  |T6&7                  |
+| 79 |black-52,black-84  |T6&7   'h'               |
 | 80 |pink-32,pink-95    |Pot1  'U'             |
 | 81 |pink-53            |R5-1k8,C to SL201-3   |
 | 82 |pink-41            |TR2-c,Transformer7    |
@@ -121,8 +135,8 @@ Notes:
 
 |Term |Wires                 |                      |
 |-----|----------------------|----------------------|
-|  31 |pink-69,pink-70       |                      |
-|  32 |pink-72,pink-73       |                      |
+|  31 |pink-69,pink-70       |Test sw1                      |
+|  32 |pink-72,pink-73       |Test sw2                      |
 |  33 |S-green8,S-red/black9 |                      |
 |  34 |S-lime18,S-red/black19|                      |
 |  35 |X1-blue767,pink-83    |                      |
@@ -163,7 +177,7 @@ Notes:
 | 4 |         |NO-7           |
 | ''|orange-11|synchro GEN 26V|
 | ''|orange-1 |synchro GEN 26V|
-| ''|pink-11  |               |
+| ''|pink-17  |               |
 | 5 |pink-63  |NC-7           |
 | 6 |red-90   |coil-b         |
 | ''|red-91   |               |
@@ -194,7 +208,7 @@ Notes:
 |TestSw1    |pink-71                                 |                    |
 |TestSw2    |pink-68                                 |                    |
 |MomSw1     |pink-66                                 |                    |
-|MomSw2     |black-68                                |                    |
+|MomSw2     |black-68                                | chassis            |
 |           |                                        |                    |
 
 <br>
@@ -206,7 +220,7 @@ Notes:
 |Name|Wire    |                      |
 |----|--------|----------------------|
 |S1  |pink-21 |transformer #10       |
-|S3  |black-22|transformer # 9       |
+|S3  |black-22|transformer # 9,chassis|
 |S2  |link to |S2-S4 linked          |
 |S4  |pink-26 |S2-S4 linked          |
 |S5  |pink-25 |R21                   |
@@ -242,16 +256,16 @@ Notes:
 
 |Colour   |Terminal|Wire|
 |---------|--------|----|
-|black    | 12     |X1-black7
-|brown    | 36     |X1-brown1
+|yellow   |        |
+|white    |        |
 |red      | 65     |X1-red5
 |red/black|        |
-|yellow   |        |
-|orange   |        |
 |green    |        |
+|black    | 12     |X1-black7
+|orange   |        |
+|grey     |        |51r to chassis
 |blue     | 35     |X1-blue767
-|grey     |        |
-|white    |        |
+|brown    | 36     |X1-brown1
 
 <br>
 
